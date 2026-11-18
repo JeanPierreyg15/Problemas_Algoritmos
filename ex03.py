@@ -23,7 +23,7 @@ def pascal_case(texto):
             if palabra_limpia !="":
                 primera_letra = palabra_limpia[0].upper()
                 resto_palabra = palabra_limpia[1:].lower()
-                pascal = primera_letra + resto_palabra
+                pascal += primera_letra + resto_palabra
 
     except AttributeError:
         print("Debe ingresar un texto")
