@@ -16,4 +16,11 @@ def caracter_inicial_final(texto):
     print(f"Caracter inicial : {texto[0]}")
     print(f"Caracter final: {texto[len(texto)-1]}")
 
-caracter_inicial_final("Vampires will never hurt you")
+caracter_inicial_final("    ")
+
+
+'''
+Revisión:
+
+* Falta validar entradas con cadenas de solo espacios (hay que aplicar trim siempre en las entradas de texto para eliminar los espacios del inicio y final).
+'''

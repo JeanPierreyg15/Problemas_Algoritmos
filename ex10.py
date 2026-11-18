@@ -24,3 +24,9 @@ def tabla_multiplicar(numero):
         return print("Debes ingresar un numero")
 
 tabla_multiplicar(6)
+
+'''
+Revisión:
+
+* Recuerda que son números naturales (deben salir como enteros no como decimales).
+'''

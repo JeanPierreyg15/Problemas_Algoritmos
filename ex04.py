@@ -16,4 +16,10 @@ def invertir_cadena(texto):
         return print("Debe ingresar un texto")
 
     
-invertir_cadena(4)
+invertir_cadena("")
+
+'''
+Revisión:
+
+* Falta validar entradas de cadena vacía.
+'''

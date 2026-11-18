@@ -18,3 +18,9 @@ def suma_numeros_consecutivos_formula(numero_final):
     return print(f"Suma de 1 a {numero_final} : {resultado}")
 
 suma_numeros_consecutivos_formula(10)
+
+'''
+Revisión:
+
+* Recuerda que son números naturales (deben salir como enteros no como decimales).
+'''

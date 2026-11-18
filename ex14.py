@@ -32,4 +32,4 @@ def convertir_base_10(numero,base):
     except ValueError:
         return print("Debes ingresar numeros")
 
-convertir_base_10(251,7)
+convertir_base_10(102,3)

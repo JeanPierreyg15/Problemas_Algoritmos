@@ -33,3 +33,9 @@ def positivo_o_negativo(numero):
     return True
 
 crear_multiplicador(-9,-4)
+
+'''
+Revisión:
+
+* No ofusquemos los errores de la entrada (ejm: número negativos) porque no favorece la UX (user experience).
+'''

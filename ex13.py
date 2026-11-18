@@ -30,4 +30,4 @@ def dar_vuelto(mi_dinero,precio):
     except ValueError:
         return print("Debe ingresar numeros")
 
-dar_vuelto(8,6)
+dar_vuelto(mi_dinero=10,precio=12)

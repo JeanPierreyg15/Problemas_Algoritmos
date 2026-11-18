@@ -42,4 +42,10 @@ def billetes_por_tipo(total):
     except ValueError:
         return print("Debes ingresar numeros")
 
-billetes_por_tipo(260)
+billetes_por_tipo(80)
+
+'''
+Revisión:
+
+* ¿Cómo se simplificaría la solución usando un diccionario?
+'''

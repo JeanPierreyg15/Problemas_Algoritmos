@@ -19,4 +19,11 @@ def contar_vocales(palabra):
 
     print(f"La palabra {palabra} tiene {contador} vocales")
 
-contar_vocales(2)
+contar_vocales("manuel rivera")
+
+
+'''
+Revisión:
+
+* Usar uppercase o lowercase en lugar de duplicarlas para minúsculas y mayúsculas.
+'''

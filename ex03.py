@@ -19,4 +19,10 @@ def pascal_case(texto):
 
     return print(pascal)
 
-pascal_case(4)
+pascal_case('company rEpository')
+
+'''
+Revisión:
+
+* ¿Cómo se haría sin el método title?
+'''

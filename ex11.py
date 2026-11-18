@@ -23,4 +23,13 @@ def detectar_anagrama(primera_palabra,segunda_palabra):
     except AttributeError:
         return print("Debes ingresar solamente textos")
 
-detectar_anagrama("Croacia",4)
+detectar_anagrama("armar","remo")
+
+'''
+Revisión:
+
+* Falta validar entradas de cadena vacía.
+* Está fallando con:
+    - armar, rama (falta 1 letra)
+    - armar, ramax (falta 1 letra y sobra 1 letra)
+'''

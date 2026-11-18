@@ -22,3 +22,4 @@ def calcular_magnitud(x=0,y=0):
                 f"Resultado : {magnitud}")
 
 calcular_magnitud(3,4)
+

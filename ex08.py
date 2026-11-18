@@ -23,3 +23,10 @@ def mostrar_texto_sin_vocales(texto):
         return print("Debes ingresar un texto")
 
 mostrar_texto_sin_vocales("Per aspera ad astra")
+
+'''
+Revisión:
+
+* Usar uppercase o lowercase en lugar de duplicarlas para minúsculas y mayúsculas.
+* Falta validar entradas de cadena vacía.
+'''
