@@ -13,9 +13,10 @@ def crear_multiplicador(multiplicando,multiplicador):
     try:
         float(multiplicando)
         float(multiplicador)
-        multiplicador_positivo = positivo_o_negativo(multiplicador)
-        if(not multiplicador_positivo):
-            multiplicador *= (-1)
+
+        if multiplicador<=0:
+            return print("El multiplicador debe ser mayor a 0")
+        
         
         for index in range(1,multiplicador+1):
             respuesta += multiplicando
@@ -24,13 +25,10 @@ def crear_multiplicador(multiplicando,multiplicador):
         return print("Debe ingresar un numero")
     
     return print(f"Multiplicando: {multiplicando}\n",
-                    f"Multiplicador: {multiplicador if multiplicador_positivo else multiplicador*(-1)}\n",
-                    f"Respuesta: {respuesta if multiplicador_positivo else respuesta*(-1)}")
+                    f"Multiplicador: {multiplicador}\n",
+                    f"Respuesta: {respuesta}")
 
-def positivo_o_negativo(numero):
-    if numero<0 :
-        return False
-    return True
+
 
 crear_multiplicador(-9,-4)
 

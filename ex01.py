@@ -7,11 +7,11 @@ Cantidad de vocales: 10
 """
 
 def contar_vocales(palabra):
-    vocales="aeiouAEIOUáéíóúÁÉÍÓÚ"
+    vocales="aeiouáéíóú"
     contador=0
     try:
         for letra in palabra:
-            if letra in vocales:
+            if letra.lower() in vocales:
                 contador +=1
     except TypeError:
         print("Debe ingresar una palabra")
@@ -19,7 +19,7 @@ def contar_vocales(palabra):
 
     print(f"La palabra {palabra} tiene {contador} vocales")
 
-contar_vocales("manuel rivera")
+contar_vocales("mAnuel rivera")
 
 
 '''

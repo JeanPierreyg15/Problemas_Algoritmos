@@ -8,14 +8,26 @@ Texto en Pascal Case: CompanyRepository
 """
 
 def pascal_case(texto):
+    pascal = ""
+
     try:
-        lista = texto.title().strip().split()
+        lista = texto.strip().split()
+        for palabra in lista:
+            palabra_limpia = ""
+
+            for letra in palabra:
+
+                if("A"<=letra<="Z" or "a"<=letra<="z"):
+                    palabra_limpia = palabra_limpia + letra
+
+            if palabra_limpia !="":
+                primera_letra = palabra_limpia[0].upper()
+                resto_palabra = palabra_limpia[1:].lower()
+                pascal = primera_letra + resto_palabra
+
     except AttributeError:
         print("Debe ingresar un texto")
         return
-    pascal = ""
-    for palabra in lista:
-        pascal += palabra
 
     return print(pascal)
 
