@@ -12,6 +12,12 @@ Texto sin el caracter: “ys st to kill”
 
 def eliminar_caracter(texto,caracter):
     try:
+        if(not texto.strip()):
+            return print("No puede ingresar un texto vacio")
+
+        if not caracter.strip():
+            return print("No puede ingresar un caracter vacio")
+        
         if (len(caracter)>1):
             return print("El caracter a eliminar solo puede tener un caracter")
         

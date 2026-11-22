@@ -8,12 +8,13 @@ Texto con vocales reemplazadas: “Y1 n4 2s 1s3, m2 d2j1st2 m4r3r (p2rd4n p4r 2x
 
 
 def reemplazar_letras(texto):
-    vocales="aeiou"
+    vocales = {"a":1,"e":3,"i":5,"o":8,"u":9}
     nuevo_texto=""
     try:    
         for letra in texto:
             if letra.lower() in vocales:
-                nuevo_texto += str(vocales.index(letra)+1)
+                valor = str(vocales[letra])
+                nuevo_texto += valor
                 continue
             nuevo_texto += letra
 

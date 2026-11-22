@@ -9,25 +9,41 @@ Texto con letras desplazadas: “Epñef fñusb fm dpnfsdjp, mp flusbñ mbt cbmbt
 """
 
 def desplazar_letras(texto):
-    abc_min = "abcdefghijklnñopqrstuvwxyz"
-    abc_may = "ABCDEFGHIJKLNÑOPQRSTUVWXYZ"
 
-    palabra_nueva = ""
+    try:
+        if not texto.strip():
+            return print("No puede ingresar cadenas vacías")
+        
+        abc_min = "abcdefghijklmnñopqrstuvwxyz"
+        abc_may = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
-    for letra in texto:
+        palabra_nueva = ""
 
-        if letra in abc_min:
-            palabra_nueva += abc_min[(abc_min.index(letra)+1)%len(abc_min)]
+        for letra in texto:
 
-        elif letra in abc_may:
-            palabra_nueva += abc_may[(abc_may.index(letra)+1)%len(abc_may)]
+            if letra in abc_min:
+                palabra_nueva += reemplazar_letra(abc_min,letra)
 
-        else:
-            palabra_nueva += letra
+            elif letra in abc_may:
+                palabra_nueva += reemplazar_letra(abc_may,letra)
 
-    print(palabra_nueva)
+            else:
+                palabra_nueva += letra
 
-desplazar_letras("Donde entra el comercio, no entran las balas.")
+        print(palabra_nueva)
+    except TypeError:
+        print("Solo puede ingresar texto")
+
+def reemplazar_letra(lista,letra):
+    indice_letra = lista.index(letra)
+    letra_siguiente = indice_letra + 1
+    reemplazo = lista[(letra_siguiente)%len(lista)]
+
+    return reemplazo
+
+
+
+desplazar_letras("   ")
 
 '''
 Revisión:

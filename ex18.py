@@ -33,3 +33,7 @@ Revisión:
 
 * Es más práctico usar min() y max() para obtener el mínimo y máximo de la lista, en lugar de ordenar toda la lista.
 '''
+
+"""
+Nota : No hice cambios , lo hice con las listas solo por intentar hacerlo diferente del min y max xd
+"""

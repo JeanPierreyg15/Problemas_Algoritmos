@@ -9,6 +9,8 @@ Acrónimo: “MCR”
 
 def crear_acronimo(texto):
     try:
+        if not texto.strip():
+            return print("No puede ingresar cadenas vacias")
         lista  = texto.strip().title().split(" ")
         acronimo = ""
         for palabras in lista:

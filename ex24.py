@@ -11,6 +11,9 @@ def contar_subtexto(texto,longitud):
     try:
         int(longitud)
 
+        if not texto.strip():
+            return print("No puede ingresar un texto vacio")
+
         if longitud<=0:
             return print("Debes ingresar un numero mayor a 0 para la longitud")
         

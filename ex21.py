@@ -9,6 +9,8 @@ Texto cifrado: “****** ** ** **** ****** ***”
 
 def cifrar_texto(texto):
     try:
+        if not texto.strip():
+            return print("No puede ingresar un texto vacio")
         # Código muerto
         texto_sin_espaciado = texto.strip()
         texto_cifrado = ""

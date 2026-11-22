@@ -12,18 +12,18 @@ def convertir_texto(texto,cantidad):
     try:
         int(cantidad)
         palabras = texto.split(" ")
-        bloques_finales = []
+        todos_segmentos_texto_rellenado = []
 
         for palabra in palabras:
             if not palabra:
                 continue
 
             for i in range(0,len(palabra),cantidad):
-                bloque = palabra[i:i+cantidad]
-                bloque_completo = bloque.ljust(cantidad,"*")
-                bloques_finales.append(bloque_completo)
+                segmento_texto = palabra[i:i+cantidad]
+                segmento_texto_rellenado = segmento_texto.ljust(cantidad,"*")
+                segmento_texto_rellenado.append(segmento_texto_rellenado)
 
-        print(" ".join(bloques_finales))
+        print(" ".join(segmento_texto_rellenado))
     except ValueError:
         return print("Valor ingresado invalido")
     except AttributeError:
