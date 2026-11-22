@@ -9,6 +9,7 @@ Texto cifrado: “****** ** ** **** ****** ***”
 
 def cifrar_texto(texto):
     try:
+        # Código muerto
         texto_sin_espaciado = texto.strip()
         texto_cifrado = ""
         for letra in texto:
@@ -22,3 +23,10 @@ def cifrar_texto(texto):
         return print("Debe ingresar un texto")
 
 cifrar_texto("Cuando no es como deberia ser")
+
+
+'''
+Revisión:
+
+* Falta validar textos no vacíos.
+'''

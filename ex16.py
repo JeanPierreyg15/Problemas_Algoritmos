@@ -29,4 +29,10 @@ def desplazar_letras(texto):
 
 desplazar_letras("Donde entra el comercio, no entran las balas.")
 
+'''
+Revisión:
 
+* Ilegibilidad: El código se hace difícil de ententeder al haber muchas operaciones en una sola línea (línea 20 y 23).
+* Duplicidad de código: En las líneas mencionadas se hace la misma operación solo que con diferente array, así que perfectamente puede extraerse a una función.
+* Faltan validaciones de la entrada.
+'''

@@ -23,3 +23,10 @@ def reemplazar_letras(texto):
         return print("Debes ingresar un texto")
 
 reemplazar_letras("Ya no es así, me dejaste morir (perdón por existir)")
+
+'''
+Revisión:
+
+* Falta validar textos no vacíos.
+* Es una forma que resulta; no obstante, si por ejemplo el diccionario cambiara o los códigos no fueran secuenciales y se definier así: a=1, e=3, i=5, o=8, u=9, sería más mantenible usar un diccionario.
+'''

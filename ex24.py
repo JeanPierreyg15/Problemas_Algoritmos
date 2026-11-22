@@ -30,3 +30,9 @@ def contar_subtexto(texto,longitud):
         return print("Debes ingresar un numero entero para la longitud")
 
 contar_subtexto("Hace tiempo atrás te aseguro que tú eras mi huracán",4)
+
+'''
+Revisión:
+
+* Falta validar textos no vacíos.
+'''

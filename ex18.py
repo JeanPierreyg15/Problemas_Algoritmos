@@ -27,3 +27,9 @@ def calcular_minimo_maximo(lista_numeros):
 
 lista = [12,67,89,-323,3434,90,10]
 calcular_minimo_maximo(lista)
+
+'''
+Revisión:
+
+* Es más práctico usar min() y max() para obtener el mínimo y máximo de la lista, en lugar de ordenar toda la lista.
+'''

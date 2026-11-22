@@ -31,3 +31,9 @@ def eliminar_caracter(texto,caracter):
         return print("Debe ingresar texto")
 
 eliminar_caracter("Eyes set to kill","e")
+
+'''
+Revisión:
+
+* Falta validar textos no vacíos.
+'''

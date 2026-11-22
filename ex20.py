@@ -20,3 +20,12 @@ def crear_acronimo(texto):
 
 
 crear_acronimo("My Chemical Romance")
+
+'''
+Revisión:
+
+* Falta validar textos no vacíos.
+
+Psdt:
+Buena banda jeje
+'''
