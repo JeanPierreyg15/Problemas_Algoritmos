@@ -13,6 +13,9 @@ def caracter_inicial_final(texto):
     if not texto:
         return print("Debe ingresar texto")
 
+    if not texto.strip():
+        return print("No puede ingresar texto vacío")
+
     print(f"Caracter inicial : {texto[0]}")
     print(f"Caracter final: {texto[len(texto)-1]}")
 

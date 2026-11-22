@@ -10,9 +10,23 @@ def detectar_anagrama(primera_palabra,segunda_palabra):
     try:
         es_anagrama = 1
 
-        for i in primera_palabra.lower():
-            if i in segunda_palabra.lower():
+        p1 = primera_palabra.strip().lower()
+        p2 = segunda_palabra.strip().lower()
+
+        if not p1:
+            return print("La primera palabra no puede estar vacía")
+
+        if not p2:
+            return print("La segunda palabra no puede estar vacía")
+        
+        if (len(p1)!=len(p2)):
+            return print("No son anagramas")
+
+        lista_segunda_palabra = list(p2)
+        for i in primera_palabra.lower().strip():
+            if i in lista_segunda_palabra:
                 es_anagrama *=1
+                lista_segunda_palabra.remove(i)
             else:
                 es_anagrama*=0
 
@@ -23,7 +37,7 @@ def detectar_anagrama(primera_palabra,segunda_palabra):
     except AttributeError:
         return print("Debes ingresar solamente textos")
 
-detectar_anagrama("armar","remo")
+detectar_anagrama("aab","abb")
 
 '''
 Revisión:

@@ -19,7 +19,7 @@ def tabla_multiplicar(numero):
         if numero<=0:
             return print("Debe ingresar un numero mayor a 0 ")
         for index in range(1,13):
-            print(f" {numero} x {index} = {numero*index}")
+            print(f" {numero} x {index} = {int(numero*index)}")
     except ValueError:
         return print("Debes ingresar un numero")
 

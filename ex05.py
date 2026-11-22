@@ -12,7 +12,7 @@ def suma_numeros_consecutivos_formula(numero_final):
         int(numero_final)
         if(numero_final<=0):
             return print("Debes ingresar un numero entero y positivo")
-        resultado = (numero_final*(numero_final+1))/2
+        resultado = int((numero_final*(numero_final+1))/2)
     except TypeError:
         return print("Debes ingresar un numero entero")
     return print(f"Suma de 1 a {numero_final} : {resultado}")

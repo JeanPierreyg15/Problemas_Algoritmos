@@ -9,6 +9,8 @@ Texto al revés: “ehcel noc zorrA”
 def invertir_cadena(texto):
     cadena_invertida = ""
     try:
+        if not texto.strip():
+            return print("La cadena no puede estar vacía")
         for letra in texto:
             cadena_invertida = letra + cadena_invertida
         print(cadena_invertida)

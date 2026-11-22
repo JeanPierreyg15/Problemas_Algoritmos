@@ -9,11 +9,14 @@ Texto sin vocales: “Pr spr d str”
 
 def mostrar_texto_sin_vocales(texto):
     try:
-        vocales="aeiouáéíóúAEIOUÁÉÍÓÚ"
+        if not texto.strip():
+            return print("No puede ingresar cadenas vacías")
+        
+        vocales="aeiouáéíóú"
         nuevo_texto = ""
 
         for letra in texto:
-            if(letra in vocales ):
+            if(letra.lower() in vocales ):
                 continue
             nuevo_texto = nuevo_texto + letra
 
